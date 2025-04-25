@@ -1,0 +1,73 @@
+
+
+:root{
+  --cor-branco:         #FFFFFFFF;
+  --cor-branco-2:       #E7E7EAFF;
+  --cor-branco-3:       #F4F4F4FF;
+  --cor-cinza-branco:   #E7E7EA;
+  --cor-cinza-branco-2: #CECECEFF;
+  --cor-cinza-3:        #C1C1C1FF;
+  --cor-cinza-4:        #DEDEDEFF;
+  --cor-cinza-5:        #D9D9D9FF;
+  --cor-cinza-6:        #DDDDDDFF;
+  --cor-cinza-claro:    #828282FF;
+  --cor-cinza-medio:    #656565FF;
+  --cor-cinza-texto:    #4F4F4FFF;
+  --cor-cinza-escuro:   #303030FF;
+  --cor-preto:          #000000FF;
+  --cor-azul-marinho:   #005CFFFF;
+  --cor-azul-medio:     #003A70FF;
+  --cor-azul-escuro:    #00264EFF;
+  --cor-verde-azul:     #5EC0BEFF;
+  --cor-roxo:           #9747FFFF;
+  --cor-roxo-escuro:    #6220C1FF;
+  --cor-vermelho:       #FF3366FF;
+  --cor-laranja:        #FFA400FF;
+}
+
+.fundo-cinza-1{
+  background-color: var(--cor-cinza-branco);
+}
+
+.fundo-cinza-2{
+  background-color: var(--cor-cinza-4);
+}
+
+.fundo-cinza-3{}
+
+.body{
+  font-size: 14px;
+}
+
+
+.bold{
+  font-weight: 700;
+}
+
+.regular{
+  font-weight: 400;
+}
+
+.italic{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.cash-header{
+  border-radius: 4px; 
+  background-color: var(--cor-roxo-escuro);
+  padding: 1px 5px;
+}
+
+.header-promocao{
+  background-color: var(--cor-azul-marinho);
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 7px 0;
+}
