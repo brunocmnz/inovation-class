@@ -1,55 +1,4 @@
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-  font-size: 14px;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 
 :root{
   --cor-branco:         #FFFFFFFF;
@@ -76,6 +25,8 @@ table {
   --cor-laranja:        #FFA400FF;
 
   --fonte-nunito: "Nunito", sans-serif;
+  --fonte-nunito-sans: "Nunito", sans-serif;
+  --weight-semibold: 650;
   --weight-bold: 700;
   --weight-light: 300;
   --weight-regular: 400;
@@ -164,6 +115,8 @@ table {
 .ola-cliente h3{
   margin: 0;
   line-height: 14px;
+  font-family: var(--fonte-nunito-sans);
+  font-weight: var(--weight-semibold);
 }
 
 .carrinho{
@@ -198,11 +151,10 @@ table {
 
 .promocao{
   display: flex;
+  justify-content: center;
   box-sizing: border-box;
   object-fit: cover;
   height: 70vh;
-  box-sizing: border-box; /* muito importante */
-  background-color: ;
 }
 
 
@@ -231,6 +183,15 @@ table {
 }
 
 /* Tira o espaço entre SUPER e SALE */
+.promocao-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
 .promocao-texto h2 {
   display: flex;
   gap: 0;
@@ -240,5 +201,16 @@ table {
   font-weight: var(--weight-bold);
   font-family: var(--fonte-nunito);
   text-transform: uppercase;
-  letter-spacing: 30%;
+  letter-spacing: 0.8em;
+  color: var(--cor-azul-marinho);
+  margin: 12px 0;
+}
+
+.promocao-texto-2{
+  font-family: var(--fonte-nunito);
+  color: var(--cor-azul-marinho);
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0%;
 }
