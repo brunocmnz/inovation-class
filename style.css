@@ -33,8 +33,20 @@
   --weight-regular: 400;
 }
 
+.line-h-28{
+  line-height: 28px;
+}
+
+.line-h-22{
+  line-height: 22px;
+}
+
 .tam-14{
   font-size: 14px;
+}
+
+.tam-12{
+  font-size: 12px;
 }
 
 .fundo-cinza-1{
@@ -48,8 +60,6 @@
 .fundo-cinza-3{
 
 }
-
-
 
 .bold{
   font-weight: 700;
@@ -356,7 +366,53 @@
 
 
 .rodape{
+}
 
+.rodape-social{
+  display: flex;
+  gap: 40px;
+}
+
+.rodape-topo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F5F5F5;
+  padding: 64px 0;
+  gap: 64px;
+}
+
+.rodape-cartoes{
+  height: 24px;
+}
+
+.rodape-topo-1{
+  display: flex;
+  justify-content: center;
+  gap: 142px;
+}
+
+.rodape-topo-social{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rodape-info{
+  display: flex;
+  gap: 110px;
+}
+
+.rodape-avanti-titulo{
+  font-family: var(--fonte-nunito);
+  font-size: 14px;
+  margin-bottom: 11px;
+  font-weight: var(--weight-bold);
+}
+
+.rodape-a{
+  text-decoration: none;
+  color: #303030;
 }
 
 .rodape-empresas{
