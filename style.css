@@ -334,3 +334,22 @@
   top: 25%;
   left: 25%;
 }
+
+.avanti{
+  background-image: url("img/img-banner-avanti.png");
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avanti-texto{
+  background-color: var(--cor-azul-marinho);
+  color: var(--cor-branco);
+  font-family: var(--fonte-nunito);
+  font-size: 30px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
