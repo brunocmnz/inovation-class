@@ -33,6 +33,11 @@
   --weight-regular: 400;
 }
 
+body {
+  padding-top: 143px; /* ou o valor real que o header ocupa */
+}
+
+
 .line-h-28{
   line-height: 28px;
 }
