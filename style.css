@@ -353,3 +353,62 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.rodape{
+
+}
+
+.rodape-empresas{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.rodape-empresas img{
+  width: 296px;
+}
+
+.rodape-empresas p{
+  margin: 0 20vw;
+  font-size: 12px;
+  font-family: var(--fonte-nunito);
+  line-height: 20px;
+}
+
+.rodape-empresas-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.grupo-logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  height: 32px;
+  max-width: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-3{
+  padding: 10px 0;
+}
+.logo-4{
+  padding: 6.5px 0;
+}
+
+.divisor {
+  width: 1px;
+  height: 16px;
+  background-color: var(--cor-cinza-7);
+}
