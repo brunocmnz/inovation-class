@@ -363,9 +363,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
   gap: 40px;
-  margin: 40px 0;
+  margin: 40px 20vw;
 }
 
 .rodape-empresas img{
@@ -373,7 +372,6 @@
 }
 
 .rodape-empresas p{
-  margin: 0 20vw;
   font-size: 12px;
   font-family: var(--fonte-nunito);
   line-height: 20px;
@@ -384,7 +382,6 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 20px 0;
 }
 
 .grupo-logos {
