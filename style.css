@@ -10,6 +10,7 @@
   --cor-cinza-4:        #DEDEDEFF;
   --cor-cinza-5:        #D9D9D9FF;
   --cor-cinza-6:        #DDDDDDFF;
+  --cor-cinza-7:        #C2C2C2;
   --cor-cinza-claro:    #828282FF;
   --cor-cinza-medio:    #656565FF;
   --cor-cinza-texto:    #4F4F4FFF;
@@ -232,4 +233,45 @@
   text-transform: uppercase;
   font-weight: var(--weight-bold);
   letter-spacing: 0%;
+}
+
+.opcoes-descricao-descricao{
+  display: flex;
+  justify-content: center;
+  margin: 95px 0 55px 0;
+}
+
+.opcoes-descricao-descricao-img{
+  /*652 747*/
+  background-color: var(--cor-cinza-7);
+  width: 652px;
+  height: 747px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-right: 37.5px;
+}
+
+.opcoes-descricao-descricao-img img{
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+.opcoes-descricao-descricao-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 487px;
+  gap: 22px;
+}
+
+.opcoes-descricao-descricao-texto h3{
+  font-size: 30px;
+}
+.opcoes-descricao-descricao-texto p{
+  font-size: 18px;
 }
