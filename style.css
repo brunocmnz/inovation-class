@@ -90,6 +90,17 @@
   padding: 1px 5px;
 }
 
+header{
+  position: fixed; /* FIXA no topo */
+  top: 0;           /* Grudado no topo */
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;    /* Fica acima de todo o resto */
+  background-color: var(--cor-branco); /* importante: dar fundo para não ficar transparente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opcional: sombra para destacar */
+}
+
 .header-promocao{
   background-color: var(--cor-azul-marinho);
   color: var(--cor-branco);
