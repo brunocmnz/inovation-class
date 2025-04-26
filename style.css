@@ -149,12 +149,31 @@
   padding: 0;
 }
 
+.header-departamentos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 330px;
+  margin-bottom: 18px;
+}
+
+.header-departamentos a{
+  color: var(--cor-preto);
+  text-decoration: none;
+}
+
+.header-menu{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .promocao{
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   object-fit: cover;
-  height: 70vh;
+  height: 510px;
 }
 
 
