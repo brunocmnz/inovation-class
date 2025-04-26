@@ -1,4 +1,55 @@
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-size: 14px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 
 :root{
   --cor-branco:         #FFFFFFFF;
@@ -23,6 +74,15 @@
   --cor-roxo-escuro:    #6220C1FF;
   --cor-vermelho:       #FF3366FF;
   --cor-laranja:        #FFA400FF;
+
+  --fonte-nunito: "Nunito", sans-serif;
+  --weight-bold: 700;
+  --weight-light: 300;
+  --weight-regular: 400;
+}
+
+.tam-14{
+  font-size: 14px;
 }
 
 .fundo-cinza-1{
@@ -33,11 +93,10 @@
   background-color: var(--cor-cinza-4);
 }
 
-.fundo-cinza-3{}
+.fundo-cinza-3{
 
-.body{
-  font-size: 14px;
 }
+
 
 
 .bold{
@@ -51,6 +110,10 @@
 .italic{
   font-style: italic;
   font-weight: 400;
+}
+
+.nunito{
+  font-family: var(--fonte-nunito);
 }
 
 .nunito-sans {
@@ -70,4 +133,112 @@
   color: var(--cor-branco);
   text-align: center;
   padding: 7px 0;
+}
+
+.header-topo{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  padding: 0 15%;
+  margin: 17px 0 23px 0;
+  justify-content: center;
+}
+
+.barra-pesquisa{
+  width: 40%;
+  color: var(--cor-preto);
+  margin: 0 10% 0 3%;
+}
+
+
+.perfil-carrinho{
+  display: flex;
+  height: 24px;
+}
+
+.ola-cliente{
+  margin: 0;
+  margin: 0 24px 0 8px;
+}
+
+.ola-cliente h3{
+  margin: 0;
+  line-height: 14px;
+}
+
+.carrinho{
+}
+
+.badge-wrapper {
+  position: absolute;
+  top: -10px;
+  right: -13px;
+  width: 24px;
+  height: 24px;
+}
+
+.badge-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.badge-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza certinho */
+  
+  font-family: var(--fonte-nunito);
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.promocao{
+  display: flex;
+  box-sizing: border-box;
+  object-fit: cover;
+  height: 70vh;
+  box-sizing: border-box; /* muito importante */
+  background-color: ;
+}
+
+
+.promocao img {
+  max-height: 100%;
+  height: auto;
+  display: block;
+}
+
+.lspace{
+  letter-spacing: 100;
+}
+
+.promo {
+  font-family: var(--fonte-nunito);
+  font-size: 100px;
+  letter-spacing: 0; /* Junta as letras */
+}
+
+.super {
+  font-weight: bold;
+}
+
+.sale {
+  font-weight: var(--weight-light);
+}
+
+/* Tira o espaço entre SUPER e SALE */
+.promocao-texto h2 {
+  display: flex;
+  gap: 0;
+}
+
+.promocao-texto-1{
+  font-weight: var(--weight-bold);
+  font-family: var(--fonte-nunito);
+  text-transform: uppercase;
+  letter-spacing: 30%;
 }
