@@ -271,6 +271,7 @@ header{
   font-family: var(--fonte-nunito);
   padding: 8px;
   padding-top: 6px;
+  position: relative;
 }
 
 .card-produto img {
@@ -278,7 +279,7 @@ header{
   height: auto;
 }
 
-.card-produto h3 {
+.card-produto .h3 {
   font-size: 16px;
   margin-bottom: 8px;
 }
@@ -371,6 +372,23 @@ header{
 .lancamentos-titulo{
   font-size: 20px;
   font-weight: var(--weight-bold);
+}
+
+.lancamentos-tag-novo{
+  background-color: var(--cor-azul-escuro);
+  color: var(--cor-branco);
+  border-radius: 4px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  width: 41px;
+  height: 22px;
+  padding: 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-button-prev img,
