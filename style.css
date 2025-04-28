@@ -355,6 +355,24 @@ header{
   margin: 0 15vw;
 }
 
+.lancamentos-opcoes{
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fonte-nunito);
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+
+.lancamentos-ver-mais{
+  text-decoration: none;
+  color: var(--cor-preto);
+}
+
+.lancamentos-titulo{
+  font-size: 20px;
+  font-weight: var(--weight-bold);
+}
+
 .swiper-button-prev img,
 .swiper-button-next img {
   width: 32px; /* ou o tamanho que quiser */
