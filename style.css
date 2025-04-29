@@ -92,6 +92,11 @@ body {
   padding: 1px 5px;
 }
 
+.azul-destaque {
+  color: var(--cor-azul-marinho);
+  font-weight: var(--weight-bold);
+}
+
 header {
   position: fixed;
   /* FIXA no topo */
@@ -197,6 +202,98 @@ header {
   align-items: center;
   gap: 8px;
 }
+
+#botaoMenu {
+  color: black;
+  /* cor padrão quando fechado */
+  transition: color 0.3s ease;
+}
+
+#botao-menu.ativo {
+  color: var(--cor-azul-marinho);
+}
+
+/* Estilo padrão do ícone */
+#botao-menu.ativo img {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+/* Quando ativo, aplica filtro para deixar azul */
+#botao-menu.ativo img {
+  filter: invert(29%) sepia(96%) saturate(2248%) hue-rotate(210deg) brightness(101%) contrast(102%);
+}
+
+.itens-menu {
+  padding: 0 330px;
+  font-family: var(--fonte-nunito);
+  font-size: 14px;
+}
+
+.itens-menu h6 {
+  font-weight: bold;
+}
+
+.itens-menu a {
+  text-decoration: none;
+  color: #656565;
+}
+
+.menu-categorias {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-categorias > .collapse {
+  flex: 0 0 70%; /* ou width: 70% */
+}
+
+.menu-confira-produtos {
+  flex: 1;
+}
+
+.itens-menu .row div ul {
+  display: flex;
+}
+
+.itens-menu .row div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+
+.menu-confira-produtos {
+  font-family: var(--fonte-nunito);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%),
+    url("img/img-caneca-tabua.png");
+  background-size: cover;
+  height: 298px;
+  width: 236px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: var(--cor-branco);
+  line-height: 27px;
+  padding: 44px 80px 92px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.menu-confira-produtos-a {
+  font-size: 12px;
+  color: var(--cor-branco) !important;
+  border: solid 1px var(--cor-branco);
+  width: 206 !important;
+  height: 38px !important;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
 
 .promocao {
   display: flex;
@@ -726,11 +823,13 @@ header {
 
 
 .swiper-pagination-bullet {
-  background-color: #838383 !important; /* cor padrão das bolinhas */
+  background-color: #838383 !important;
+  /* cor padrão das bolinhas */
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--cor-cinza-escuro) !important; /* cor azul ou a que você quiser */
+  background-color: var(--cor-cinza-escuro) !important;
+  /* cor azul ou a que você quiser */
 }
 
 
@@ -829,7 +928,7 @@ header {
     display: flex !important;
   }
 
-  .promocao{
+  .promocao {
     height: auto;
   }
 
