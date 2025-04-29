@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
     <title>Innovation Bruno</title>
 
 
@@ -517,7 +518,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="rodape-info">
+                <div class="rodape-info ocultar-mobile">
                     <div class="rodape-avanti">
                         <h4 class="rodape-avanti-titulo">
                             Institucional
@@ -606,7 +607,11 @@
                     </div>
                 </div>
             </div>
-            <img class="rodape-cartoes" src="img/img-cartoes.svg" alt="img-cartoes">
+            <div>
+                <p>teste</p>
+            </div>
+            <img class="rodape-cartoes ocultar-mobile" src="img/img-cartoes.svg" alt="img-cartoes">
+            <img class="rodape-cartoes ocultar-desktop" src="img/img-cartoes-mobile.svg" alt="img-cartoes">
         </div>
         <div class="rodape-empresas">
             <p>
@@ -654,7 +659,7 @@
                     spaceBetween: 10,
                     slidesPerView: 2
                 },
-                390: { // a partir de 768px (tablet e desktop)
+                391: { // a partir de 768px (tablet e desktop)
                     slidesPerView: 5
                 }
             }

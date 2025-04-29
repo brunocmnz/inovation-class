@@ -721,7 +721,11 @@ header {
   display: none;
 }
 
-@media (max-width: 390px) {
+
+
+
+
+@media (max-width: 391px) {
   .header-promocao {
     line-height: 22px;
   }
@@ -944,6 +948,21 @@ header {
     margin-left: 8px;
   }
 
+  .rodape-topo{
+    text-align: center;
+    padding: 40px 0;
+    gap: 48px;
+  }
+
+  .rodape-social{
+    gap: 40px;
+  }
+
+  .rodape-cartoes{
+    height: auto;
+    width: 100%;
+    padding: 0 50px;
+  }
 
   /*AQUI VEM RODAPE EMPRESAS*/
   .rodape-empresas{
