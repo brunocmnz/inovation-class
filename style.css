@@ -225,7 +225,6 @@ header {
 }
 
 .itens-menu {
-  padding: 0 330px;
   font-family: var(--fonte-nunito);
   font-size: 14px;
 }
@@ -239,9 +238,28 @@ header {
   color: #656565;
 }
 
+.menu-categorias-todas {
+  width: 60% !important;
+  padding: 0 ;
+}
+
+.menu-categorias div .row{
+  margin: 0 20px;
+}
+
 .menu-categorias {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  margin-right: auto;
+  width: 93%;
+}
+
+.container{
+  margin: 0 330px;
+}
+
+.card-body{
+  padding: 0;
 }
 
 .menu-categorias > .collapse {
@@ -249,7 +267,7 @@ header {
 }
 
 .menu-confira-produtos {
-  flex: 1;
+  margin-left: auto;
 }
 
 .itens-menu .row div ul {
