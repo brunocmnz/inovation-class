@@ -716,10 +716,22 @@ header {
 }
 
 .ocultar-desktop {
+  display: none !important;
+}
+
+
+.banner-swiper {
   display: none;
 }
 
 
+.swiper-pagination-bullet {
+  background-color: #838383 !important; /* cor padrão das bolinhas */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--cor-cinza-escuro) !important; /* cor azul ou a que você quiser */
+}
 
 
 
@@ -729,11 +741,11 @@ header {
   }
 
   .ocultar-mobile {
-    display: none;
+    display: none !important;
   }
 
   .ocultar-desktop {
-    display: block;
+    display: block !important;
   }
 
   header {
@@ -801,9 +813,46 @@ header {
     margin-right: 15px;
   }
 
+  .swiper-slide img {
+    width: 50vw;
+  }
+
   .promocao {
     margin: 0;
   }
+
+  .banner-swiper {
+    margin: 0 !important;
+  }
+
+  .swiper-slide-banner {
+    display: flex !important;
+  }
+
+  .promocao{
+    height: auto;
+  }
+
+  .super,
+  .sale {
+    font-size: 40px;
+  }
+
+  .promocao-texto {
+    align-items: center;
+  }
+
+  .promocao-texto-1 {
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0;
+  }
+
+  .promocao-texto-2 {
+    font-size: 32px;
+    font-weight: var(--weight-bold);
+  }
+
 
   .lancamentos {
     margin: 56px 5px;
@@ -946,7 +995,7 @@ header {
     margin-left: 8px;
   }
 
-  .sublinhado{
+  .sublinhado {
     text-underline-offset: 1px;
   }
 
@@ -979,7 +1028,7 @@ header {
     margin-left: auto;
     transition: transform 0.3s ease;
   }
-  
+
   .accordion-button:not(.collapsed)::after {
     background-image: url("img/img-icone-accordeon.svg");
     transform: rotate(180deg);

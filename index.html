@@ -32,7 +32,9 @@
         </h5>
 
         <div class="header-topo">
-            <img class="menu-mobile ocultar-desktop" src="img/icone-menu.svg" alt="icone-menu">
+            <a href="#">
+                <img class="menu-mobile ocultar-desktop" src="img/icone-menu-mobile.svg" alt="icone-menu">
+            </a>
             <img src="img/logo-avanti.svg" alt="logo-avanti">
             <div class="barra-pesquisa" style="position: relative;">
                 <input type="text" class="nunito form-control" placeholder="Digite aqui o que você procura"
@@ -48,14 +50,16 @@
                     <h3 class="tam-14">Olá,</h3>
                     <h3 class="tam-14">Nome cliente!</h3>
                 </div>
-                <div class="carrinho-wrapper" style="position: relative; display: inline-block;">
-                    <img class="carrinho" src="img/icone-carrinho.svg" alt="icone-carrinho">
+                <a href="#">
+                    <div class="carrinho-wrapper" style="position: relative; display: inline-block;">
+                        <img class="carrinho" src="img/icone-carrinho.svg" alt="icone-carrinho">
 
-                    <div class="badge-wrapper">
-                        <img src="img/circle.svg" class="rounded-circle badge-1" alt="circulo">
-                        <h3 class="badge-2">2</h3>
+                        <div class="badge-wrapper">
+                            <img src="img/circle.svg" class="rounded-circle badge-1" alt="circulo">
+                            <h3 class="badge-2">2</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="header-departamentos ocultar-mobile">
@@ -91,14 +95,96 @@
     </header>
 
     <div class="promocao fundo-cinza-1">
-        <img src="img/img-cadeira.png" alt="img-cadeira">
-        <div class="promocao-texto">
+        <img class="ocultar-mobile" src="img/img-cadeira.png" alt="img-cadeira">
+        <div class="promocao-texto ocultar-mobile">
             <h2>
                 <span class="promo super">SUPER</span><span class="promo sale">SALE
                     <span>
             </h2>
             <h4 class="promocao-texto-1">Itens selecionados com até</h4>
             <h4 class="promocao-texto-2">50%off</h4>
+        </div>
+
+        <div class="swiper banner-swiper ocultar-desktop">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide swiper-slide-banner">
+                    <img class="" src="img/img-cadeira-mobile.png" alt="img-cadeira">
+                    <div class="promocao-texto">
+                        <h2>
+                            <span class="promo super">
+                                SUPER
+                            </span>
+                        </h2>
+                        <h2>
+                            <span class="promo sale">
+                                SALE
+                                <span>
+                        </h2>
+                        <h4 class="promocao-texto-1">Selected items up to</h4>
+                        <h4 class="promocao-texto-2">50%off</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-banner">
+                    <img class="" src="img/img-cadeira-mobile.png" alt="img-cadeira">
+                    <div class="promocao-texto">
+                        <h2>
+                            <span class="promo super">
+                                SUPER
+                            </span>
+                        </h2>
+                        <h2>
+                            <span class="promo sale">
+                                SALE
+                                <span>
+                        </h2>
+                        <h4 class="promocao-texto-1">Selected items up to</h4>
+                        <h4 class="promocao-texto-2">50%off</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-banner">
+                    <img class="" src="img/img-cadeira-mobile.png" alt="img-cadeira">
+                    <div class="promocao-texto">
+                        <h2>
+                            <span class="promo super">
+                                SUPER
+                            </span>
+                        </h2>
+                        <h2>
+                            <span class="promo sale">
+                                SALE
+                                <span>
+                        </h2>
+                        <h4 class="promocao-texto-1">Selected items up to</h4>
+                        <h4 class="promocao-texto-2">50%off</h4>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-banner">
+                    <img class="" src="img/img-cadeira-mobile.png" alt="img-cadeira">
+                    <div class="promocao-texto">
+                        <h2>
+                            <span class="promo super">
+                                SUPER
+                            </span>
+                        </h2>
+                        <h2>
+                            <span class="promo sale">
+                                SALE
+                                <span>
+                        </h2>
+                        <h4 class="promocao-texto-1">Selected items up to</h4>
+                        <h4 class="promocao-texto-2">50%off</h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
@@ -111,8 +197,7 @@
                 </a>
             </div>
             <div class="swiper lancamentos-swiper">
-                <div class="swiper-wrapper">
-
+                <div class="swiper-wrapper swiper-wrapper-banner">
                     <div class="swiper-slide">
                         <div class="card-produto">
                             <h3 class="lancamentos-tag-novo">NOVO</h3>
@@ -232,6 +317,7 @@
                             <button class="comprar">Comprar</button>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Botões de navegação -->
@@ -748,6 +834,15 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
+        const bannerSwiper = new Swiper('.banner-swiper', {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
         const swiper = new Swiper('.lancamentos-swiper', {
             slidesPerView: 5,
             spaceBetween: 17,
