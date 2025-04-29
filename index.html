@@ -70,43 +70,43 @@
                 <h3 class="tam-14 nunito bold">Todas as Categorias</h3>
             </button>
 
-            <button  class="btn header-menu" data-bs-toggle="collapse" data-target="#departamento1"
-                role="button" aria-expanded="false" aria-controls="departamento1">
+            <button class="btn header-menu" data-bs-toggle="collapse" data-target="#departamento1" role="button"
+                aria-expanded="false" aria-controls="departamento1">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento2" aria-expanded="false" aria-controls="departamento2">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento2"
+                aria-expanded="false" aria-controls="departamento2">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento3" aria-expanded="false" aria-controls="departamento3">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento3"
+                aria-expanded="false" aria-controls="departamento3">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento4" aria-expanded="false" aria-controls="departamento4">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento4"
+                aria-expanded="false" aria-controls="departamento4">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento5" aria-expanded="false" aria-controls="departamento5">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento5"
+                aria-expanded="false" aria-controls="departamento5">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento6" aria-expanded="false" aria-controls="departamento6">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento6"
+                aria-expanded="false" aria-controls="departamento6">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento7" aria-expanded="false" aria-controls="departamento7">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento7"
+                aria-expanded="false" aria-controls="departamento7">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
-            <button  class="btn header-menu" role="button" data-bs-toggle="collapse"
-                data-target="#departamento8" aria-expanded="false" aria-controls="departamento8">
+            <button class="btn header-menu" role="button" data-bs-toggle="collapse" data-target="#departamento8"
+                aria-expanded="false" aria-controls="departamento8">
                 <h3 class="tam-14 nunito bold">Departamento</h3>
             </button>
 
@@ -2909,7 +2909,7 @@
                     <input type="email" class="inputs form-control" id="inputEmail" placeholder="Digite seu e-mail">
                 </div>
 
-                <div class="newsletter-politica-div d-flex">
+                <div class="col-auto newsletter-politica-div d-flex">
                     <input class="form-check-input mt-0" type="checkbox" value=""
                         aria-label="Checkbox for following text input">
                     <p class="newsletter-politica mb-0">
@@ -3035,10 +3035,11 @@
 
             <div class="acordions ocultar-desktop">
                 <div class="accordion" id="accordionExample">
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Institucional
                             </button>
                         </h2>
@@ -3068,10 +3069,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                                 Central de ajuda
                             </button>
                         </h2>
@@ -3105,10 +3107,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
                                 Atendimento
                             </button>
                         </h2>
@@ -3140,6 +3143,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -3215,7 +3219,7 @@
             }
         });
 
-        
+
         // Botão principal "Todas as Categorias"
         const botaoMenu = document.getElementById('botao-menu');
         const secaoCollapse = document.getElementById('departamento0');
@@ -3260,6 +3264,12 @@
             botao.addEventListener('click', function (e) {
                 e.preventDefault();
 
+                const alvo = document.querySelector(this.getAttribute('data-target'));
+
+                if (!alvo) return;
+
+                const isOpen = alvo.classList.contains('show');
+
                 // Fecha todos os departamentos
                 document.querySelectorAll('.itens-menu').forEach(el => {
                     const collapse = bootstrap.Collapse.getInstance(el);
@@ -3275,16 +3285,16 @@
                     b.classList.remove('azul-destaque');
                 });
 
-                // Adiciona destaque no botão clicado
-                this.classList.add('azul-destaque');
-
-                // Abre o departamento alvo
-                const alvo = document.querySelector(this.getAttribute('data-target'));
-                if (alvo) {
+                if (!isOpen) {
+                    // Se estava fechado, abre o clicado
                     new bootstrap.Collapse(alvo, { toggle: true });
+                    this.classList.add('azul-destaque');
                 }
+                // Se já estava aberto, só fecha (não faz nada para azul)
             });
         });
+
+
     </script>
 
 </body>
