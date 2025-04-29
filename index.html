@@ -523,7 +523,6 @@
                         <h4 class="rodape-avanti-titulo">
                             Institucional
                         </h4>
-                        </a>
                         <a href="#" class="rodape-a">
                             <h5 class="nunito tam-14 line-h-28">
                                 Sobre Nós
@@ -550,7 +549,6 @@
                         <h4 class="rodape-avanti-titulo">
                             Central de ajuda
                         </h4>
-                        </a>
                         <a href="#" class="rodape-a">
                             <h5 class="nunito tam-14 line-h-28">
                                 Fale Conosco
@@ -582,7 +580,6 @@
                         <h4 class="rodape-avanti-titulo">
                             Atendimento
                         </h4>
-                        </a>
                         <h5 class="nunito tam-14 line-h-28">
                             <span class="tam-14 bold">
                                 Telefone:
@@ -608,7 +605,113 @@
                 </div>
             </div>
             <div>
-                <p>teste</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Institucional
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Sobre Nós
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Nossas Lojas
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Privacidade e Segurança
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Termos e Condições
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Central de ajuda
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Fale Conosco
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Frete e Entrega
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Trocas e Devoluções
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        Formas de Pagamento
+                                    </h5>
+                                </a>
+                                <a href="#" class="rodape-a">
+                                    <h5 class="nunito tam-14 line-h-28">
+                                        FAQ
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Atendimento
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h5 class="nunito tam-14 line-h-28">
+                                    <span class="tam-14 bold">
+                                        Telefone:
+                                    </span>
+                                    (00) 1234-5678
+                                </h5>
+                                <h5 class="nunito tam-12 line-h-28">
+                                    <span class="tam-14 bold">
+                                        E-mail:
+                                    </span>
+                                    exemplo@exemplo.com.br
+                                </h5>
+                                <div>
+                                    <h5 class="nunito tam-12 line-h-28 bold">
+                                        Horário de atendimento:
+                                    </h5>
+                                    <h5 class="nunito tam-12 line-h-22">
+                                        Segunda a Sábado: 07h00 às 23h00
+                                    </h5>
+                                    <h5 class="nunito tam-12 line-h-22">
+                                        Domingos e Feriados: 07h00 às 21h00
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <img class="rodape-cartoes ocultar-mobile" src="img/img-cartoes.svg" alt="img-cartoes">
             <img class="rodape-cartoes ocultar-desktop" src="img/img-cartoes-mobile.svg" alt="img-cartoes">
@@ -641,6 +744,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <script>
         const swiper = new Swiper('.lancamentos-swiper', {
             slidesPerView: 5,
