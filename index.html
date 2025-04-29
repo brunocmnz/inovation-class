@@ -31,6 +31,7 @@
         </h5>
 
         <div class="header-topo">
+            <img class="menu-mobile ocultar-desktop" src="img/icone-menu.svg" alt="icone-menu">
             <img src="img/logo-avanti.svg" alt="logo-avanti">
             <div class="barra-pesquisa" style="position: relative;">
                 <input type="text" class="nunito form-control" placeholder="Digite aqui o que você procura"
@@ -41,8 +42,8 @@
                 </a>
             </div>
             <div class="perfil-carrinho">
-                <img src="img/icone-perfil.svg" alt="icone-perfil">
-                <div class="ola-cliente">
+                <img class="ocultar-mobile" src="img/icone-perfil.svg" alt="icone-perfil">
+                <div class="ola-cliente ocultar-mobile">
                     <h3 class="tam-14">Olá,</h3>
                     <h3 class="tam-14">Nome cliente!</h3>
                 </div>
@@ -56,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-departamentos">
+        <div class="header-departamentos ocultar-mobile">
             <a href="#" class="header-menu">
                 <img src="img/icone-menu.svg" alt="icone-menu">
                 <h3 class="tam-14 nunito bold">Todas as Categorias</h3>
@@ -266,6 +267,7 @@
             </div>
         </div>
     </div>
+
     <div class="descricao-imagem fundo-cinza-2">
         <div class="descricao-imagem-descricao">
             <h3>lorem ipsum</h3>
@@ -293,6 +295,7 @@
         </div>
         <img src="img/img-caneca-tabua.png" alt="img-caneca-tabua">
     </div>
+
     <div class="imagem_descricao_opcoes">
         <div class="opcoes-descricao-descricao">
             <div class="opcoes-descricao-descricao-img">
@@ -313,7 +316,7 @@
             </div>
         </div>
 
-        <section class="lancamentos">
+        <section class="lancamentos ocultar-mobile">
             <div class="lancamentos-opcoes">
                 <h3 class="lancamentos-titulo">Lançamentos</h3>
                 <a href="#" class="lancamentos-ver-mais">
@@ -465,35 +468,34 @@
         </div>
     </div>
 
-    <div class="newsletter">
-        <form class="row align-items-center g-3">
+    <div class="newsletter-container">
+        <h3>Cadastre-se na nossa <span class="newsspan">newsletter</span></h3>
+        <div class="newsletter">
+            <form class="row align-items-center g-3">
+                <div class="col-auto">
+                    <label for="inputNome" class="visually-hidden">Nome</label>
+                    <input type="text" class="inputs form-control" id="inputNome" placeholder="Digite seu nome">
+                </div>
 
-            <div class="col-auto">
-                <label for="inputNome" class="visually-hidden">Nome</label>
-                <input type="text" class="inputs form-control" id="inputNome" placeholder="Digite seu nome">
-            </div>
+                <div class="col-auto">
+                    <label for="inputEmail" class="visually-hidden">Email</label>
+                    <input type="email" class="inputs form-control" id="inputEmail" placeholder="Digite seu e-mail">
+                </div>
 
-            <div class="col-auto">
-                <label for="inputEmail" class="visually-hidden">Email</label>
-                <input type="email" class="inputs form-control" id="inputEmail" placeholder="Digite seu e-mail">
-            </div>
+                <div class="newsletter-politica-div d-flex">
+                    <input class="form-check-input mt-0" type="checkbox" value=""
+                        aria-label="Checkbox for following text input">
+                    <p class="newsletter-politica mb-0">
+                        Estou de acordo com a <span class="sublinhado">Política de Privacidade</span>
+                    </p>
+                </div>
 
-            <div class="col-auto d-flex">
-                <input class="form-check-input mt-0" type="checkbox" value=""
-                    aria-label="Checkbox for following text input">
-                <p class="newsletter-politica mb-0">
-                    Estou de acordo com a <span class="sublinhado">Política de Privacidade</span>
-                </p>
-            </div>
-
-            <div class="col-auto">
-                <button type="submit" class="btn botao-enviar-newsletter">Cadastrar</button>
-            </div>
-
-        </form>
+                <div class="col-auto">
+                    <button type="submit" class="btn botao-enviar-newsletter">Cadastrar</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-
 
     <footer class="rodape">
         <div class="rodape-topo">
@@ -636,8 +638,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.lancamentos-swiper', {
-            slidesPerView: 5,     // Quantos produtos aparecem de uma vez
-            spaceBetween: 17,     // Espaço entre os cards
+            slidesPerView: 5,
+            spaceBetween: 17,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -646,7 +648,16 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            loop: true,           // Voltar pro início automaticamente
+            loop: true,
+            breakpoints: {
+                0: { // para qualquer tela a partir de 0px
+                    spaceBetween: 10,
+                    slidesPerView: 2
+                },
+                390: { // a partir de 768px (tablet e desktop)
+                    slidesPerView: 5
+                }
+            }
         });
     </script>
 
