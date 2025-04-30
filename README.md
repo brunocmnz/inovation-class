@@ -3,7 +3,8 @@ Desafio innovation-class para estágio FrontEnd na Avanti. Projeto Desenvolvido 
 
 
 <div style="text-align: center;">
-![image](https://github.com/user-attachments/assets/dce36ea7-edd7-4cf0-9f58-84f7cdfcc5c0)
-
+  
+![image](https://github.com/user-attachments/assets/9c887560-d06f-496f-aaa1-d307bb67a767)
+  
 ![image](https://github.com/user-attachments/assets/cf7be387-e2c8-4f1a-bce8-430f30eb7945)
 </div>
